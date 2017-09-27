@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+
+<?php
+
+$envFile = __DIR__.'/../env.json';
+$binFile = __DIR__.'/../vendor/behat/behat/bin/behat';
+
+if (file_exists($envFile)) {
+    $envConfig = file_get_contents($envFile);
+
+    if (json_decode($envConfig)) {
+        putenv('BEHAT_PARAMS='.$envConfig);
+    }
+}
+
+require_once $binFile;

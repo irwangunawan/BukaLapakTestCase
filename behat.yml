@@ -1,0 +1,11 @@
+default:
+  extensions:
+    Behat\MinkExtension:
+      base_url:  'http://www.bukalapak.com'
+      default_session: default
+      browser_name: 'chrome'
+      sessions:
+        default:
+          selenium2:
+            browser: chrome
+            wd_host: localhost:4444/wd/hub
