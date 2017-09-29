@@ -17,7 +17,7 @@ Feature: Behavior transaction on Buka lapak is successful
 
 #    Given I am on the transaction success page with id '01023A9AC' (success)
 #    Then I should see "01023A9AC" in the "transaction_id" element (success)
-#    Then I should see "FURHAN" in the "seller_name" element (success)
-#    Then I should see "REX" in the "delivery_service" element (failed)
-#    Then I should see "21/08/2016" in the "date_order" element (success)
-#    Then I should see "JALAN GURNEY" in the "address_shipment" element (failed)
+#    And I should see "FURHAN" in the "seller_name" element (success)
+#    And I should see "REX" in the "delivery_service" element (failed)
+#    And I should see "21/08/2016" in the "date_order" element (success)
+#    And I should see "JALAN GURNEY" in the "address_shipment" element (failed)
